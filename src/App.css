@@ -1,38 +1,285 @@
-.App {
-  text-align: center;
+/* General Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header {
+  background-color: #ff6f61;
+  color: white;
+  padding: 1rem 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+header nav ul {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+header nav ul li {
+  margin: 0 15px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+header nav ul li a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 20px;
+}
+
+footer a {
+  color: #ff6f61;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Home Page */
+.home {
+  text-align: center;
+  padding: 2rem;
+  background: url("https://via.placeholder.com/1500x500") no-repeat center
+    center/cover;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.home h1 {
+  font-size: 3rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.home p {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+
+/* Menu Page */
+.menu {
+  padding: 2rem;
+}
+
+.menu h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.menu select {
+  display: block;
+  margin: 0 auto 20px auto;
+  padding: 10px;
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.menu ul li {
+  background: white;
+  border: 1px solid #ddd;
+  margin: 10px;
+  padding: 20px;
+  width: 200px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.menu ul li:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Order Customization Page */
+.order-customization {
+  padding: 2rem;
+  text-align: center;
+}
+
+.order-customization label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.order-customization input[type="number"] {
+  width: 60px;
+  padding: 5px;
+  text-align: center;
+}
+
+.order-customization button {
+  background-color: #ff6f61;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.order-customization button:hover {
+  background-color: #e65b50;
+}
+
+/* Cart Page */
+.cart {
+  padding: 2rem;
+}
+
+.cart ul {
+  list-style: none;
+  padding: 0;
+}
+
+.cart ul li {
+  display: flex;
+  justify-content: space-between;
+  background: white;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.cart ul li input {
+  width: 50px;
+  padding: 5px;
+}
+
+.cart ul li button {
+  background-color: #ff6f61;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.cart ul li button:hover {
+  background-color: #e65b50;
+}
+
+.cart h3 {
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* Contact Page */
+.contact {
+  padding: 2rem;
+}
+
+.contact form div {
+  margin-bottom: 15px;
+}
+
+.contact form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.contact form input,
+.contact form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.contact form button {
+  background-color: #ff6f61;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact form button:hover {
+  background-color: #e65b50;
+}
+
+/* About Page */
+.about {
+  padding: 2rem;
+  text-align: center;
+}
+
+.about ul {
+  list-style: none;
+  padding: 0;
+}
+
+.about ul li {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+/* Feedback Page */
+.feedback {
+  padding: 2rem;
+}
+
+.feedback form div {
+  margin-bottom: 15px;
+}
+
+.feedback form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.feedback form input,
+.feedback form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.feedback form button {
+  background-color: #ff6f61;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.feedback form button:hover {
+  background-color: #e65b50;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .menu ul {
+    flex-direction: column;
+    align-items: center;
   }
-  to {
-    transform: rotate(360deg);
+
+  .cart ul li {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  header nav ul {
+    flex-direction: column;
+    align-items: center;
   }
 }
